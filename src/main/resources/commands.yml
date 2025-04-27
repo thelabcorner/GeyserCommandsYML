@@ -1,0 +1,16 @@
+# GeyserCommands - Custom commands list for Bedrock players
+# Add commands to this list that you want to suggest to Bedrock players
+
+bedrock-commands:
+  - "help"
+  - "spawn"
+  - "warp"
+  - "shop"
+  - "vote"
+  - "tpa"
+  - "home"
+  - "sethome"
+  - "rtp"
+  - "wild"
+  - "etc"
+  # Add your custom commands here

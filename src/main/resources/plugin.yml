@@ -1,0 +1,14 @@
+name: GeyserCommandsYML
+version: ${version}
+main: dev.xhue.geyserCommandsYML.GeyserCommandsYML
+api-version: '1.21'
+depend: [Geyser-Spigot, floodgate]
+description: Provides custom command suggestions for Bedrock players.
+author: xhue
+
+commands:
+  geysercommands:
+    description: This is the default command for GeyserCommands
+    usage: /gcyml <arg1> <arg2>
+    permission: geysercommands.reload
+    aliases: [geysercommandsyml, gcyml]

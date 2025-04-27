@@ -1,0 +1,7 @@
+# GeyserCommands Plugin Configuration
+
+# Debug mode - additional logging information
+debug: false
+
+# Reload command permission
+reload-permission: geysercommands.reload
