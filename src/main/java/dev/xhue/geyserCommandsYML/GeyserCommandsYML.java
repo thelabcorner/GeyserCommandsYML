@@ -30,6 +30,16 @@ public class GeyserCommandsYML extends JavaPlugin implements Listener {
         // Create default config if it doesn't exist
         saveDefaultConfig();
 
+        // Set bstats to true by default if not present
+        if (!getConfig().contains("bstats")) {
+            getConfig().set("bstats", true);
+            saveConfig();
+        }
+        boolean bstatsEnabled = getConfig().getBoolean("bstats", true);
+        if (bstatsEnabled) {
+            Metrics metrics = new Metrics(this, 25653);
+        }
+
         // Check for Floodgate and Geyser *once*
         floodgatePresent = getServer().getPluginManager().isPluginEnabled("floodgate");
         geyserPresent = getServer().getPluginManager().isPluginEnabled("Geyser-Spigot");
